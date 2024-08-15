@@ -1,12 +1,21 @@
-profit = 10
+# Profit diário esperado
+profit_esperado = 10 # representando 10kk
 
-if profit >= 9:
+# Profit feito hoje
+profit_hoje = 11 # representando 11kk
+
+# Verifica diferença e imprime a mensagem correspondente
+
+if profit_hoje >= 10:
+    print ("Excelente! Batemos a meta!")
+
+elif profit_hoje >= 9:
     print ("Profit aceitável, mas falta 1kk para bater a meta.")
 
-elif profit >= 8:
+elif profit_hoje >= 8:
     print ("Ok, faltam 2kk para bater a meta.")
 
-elif profit >= 7:
+elif profit_hoje >= 7:
     print ("Aconteceu alguma coisa? Faltam 3kk para bater a meta, precisamos melhorar!")
 
 else:
